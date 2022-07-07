@@ -35,18 +35,14 @@ const Notes = () => {
     <>
       <h1 className="text-center">{title}</h1>
       <textarea
-      classNAme="form-body"
+        classNAme="form-body"
         readOnly
         value={body}
         className="form-control mt-3"
         rows={10}
         // style={{ resize: "none" }}
       />
-      <button
-        onClick={backToNoteHome}
-        type="button"
-        className="btn-note-back"
-      >
+      <button onClick={backToNoteHome} type="button" className="btn-note-back">
         رجوع
       </button>
     </>

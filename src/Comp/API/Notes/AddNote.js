@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../../Css/Note.css";
+import Swal from "sweetalert2";
 
 import { useNavigate } from "react-router-dom";
 const AddNote = () => {
@@ -15,13 +16,22 @@ const AddNote = () => {
       },
       body: JSON.stringify({ title, body }),
     });
+    navigate("/note");
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "تم اضافة المذكره",
+      showConfirmButton: false,
+      timer: 2000,
+    });
     const data = await request.json();
 
     console.log(data);
   };
-  const back = (e) => {
-    navigate("/note");
-  };
+  // const back = (e) => {
+  //   navigate("/note");
+  // };
 
   return (
     <>
@@ -42,12 +52,13 @@ const AddNote = () => {
         style={{ resize: "none" }}
       />
       <div className="btn-group">
-      <button onClick={addToDb} type="button" className="btn-note-add">
-        إضافة
-      </button>
-      <button onClick={back} type="button" className="btn-note-back">
-        رجوع
-      </button></div>
+        <button onClick={addToDb} type="button" className="btn-note-add">
+          إضافة
+        </button>
+        {/* <button onClick={back} type="button" className="btn-note-back">
+          رجوع
+        </button> */}
+      </div>
     </>
   );
 };

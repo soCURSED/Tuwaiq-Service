@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../..//Css/Student.css";
+import Swal from "sweetalert2";
 
 import { useNavigate } from "react-router-dom";
 const StudentLogin = ({ setIsLogged }) => {
@@ -12,6 +13,13 @@ const StudentLogin = ({ setIsLogged }) => {
   const loginBTN = () => {
     setIsLogged(true);
     navigate("/student-dashboard");
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "تم تسجيل الدخول",
+      showConfirmButton: false,
+      timer: 2000,
+    });
   };
   const registerBTN = () => {
     navigate("/student-register");
