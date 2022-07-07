@@ -38,7 +38,7 @@ const StudentLogin = ({ setIsLogged }) => {
             className="form-control"
             placeholder="البريد الالكتروني"
           />
-          <input type="text" className="form-control" placeholder="كلمة السر" />
+          <input type="text" className="form" placeholder="كلمة السر" />
           <button onClick={loginBTN} type="button" className="button-64">
             <span className="text">سجل دخول</span>
           </button>
