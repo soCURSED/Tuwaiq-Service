@@ -33,7 +33,6 @@ const StudentDash = () => {
     // <div className="student-main">
     <div className="cards-main">
       <h1 className="head">صفحة الخدمات</h1>
-      {/* <div className="cards"> */}
       <div className="row m-3">
         <div className="col-md-6 col-lg-6">
           <div

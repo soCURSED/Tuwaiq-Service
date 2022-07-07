@@ -41,14 +41,13 @@ const Main = () => {
             </div>
             <div className="search">
               <input
-              className="library-search"
+                className="library-search"
                 type="text"
                 placeholder="اسم الكتاب"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 onKeyPress={searchBook}
               />
-              <button className="button-29">بحث</button>
             </div>
           </div>
         </div>

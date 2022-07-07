@@ -10,10 +10,19 @@ const Services = () => {
       <div className="services-content">
         <p className="services-head">الخدمات المقدمة</p>
         <div className="services-s1">
-          <div className="box"      data-aos="fade-right"
+        <div className="box"      data-aos="fade-right"
             data-aos-duration="1000">
  
-              <h1> خريطة المبنئ</h1>
+              <h1> البطاقة التعريفية</h1>
+              <p>
+         تساعد في اثبات احقية الدخول الى المبنى
+              </p>
+            </div>
+
+            <div className="box"  data-aos="fade-left"
+            data-aos-duration="1000">
+ 
+              <h1> خريطة المبنى</h1>
               <p>
                 الاطلاع علئ خريطة المبنئ والوصول الئ معسكر طويق عن طريق خرائط
                 قوقل
@@ -22,7 +31,7 @@ const Services = () => {
           </div>
         
         <div className="services-s2">
-          <div className="box"  data-aos="fade-left"
+          <div className="box"  data-aos="fade-right"
             data-aos-duration="1000">
             {" "}
           
@@ -34,6 +43,14 @@ const Services = () => {
         </div>
         <div className="services-s3">
           {" "}
+          <div className="box"      data-aos="fade-left"
+            data-aos-duration="1000">
+ 
+              <h1> انشطة الاكاديمية</h1>
+              <p>
+        معرفة الدورات المقامة حاليا في المعسكر
+              </p>
+            </div>
           <div className="box"  data-aos="fade-right"
             data-aos-duration="1000">
             {" "}

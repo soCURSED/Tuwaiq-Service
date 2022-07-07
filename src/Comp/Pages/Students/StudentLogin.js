@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "../..//Css/Student.css";
 import Swal from "sweetalert2";
+import { Input } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import { useNavigate } from "react-router-dom";
 const StudentLogin = ({ setIsLogged }) => {
@@ -38,7 +40,7 @@ const StudentLogin = ({ setIsLogged }) => {
             className="form-control"
             placeholder="البريد الالكتروني"
           />
-          <input type="text" className="form-control" placeholder="كلمة السر" />
+          <Input type="text" className="form-control" placeholder="كلمة السر" />
           <button onClick={loginBTN} type="button" className="button-64">
             <span className="text">سجل دخول</span>
           </button>
