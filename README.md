@@ -14,9 +14,13 @@ Backend: Java, Spring JPA
 
 Link:
 
-https://tuwaiq-service.netlify.app/student-dashboard
+https://tuwaiq-service.netlify.app/
 
-https://tuwaiq-service.netlify.app/student-dashboard
+https://tuwaiq-service.netlify.app/
+
+https://tuwaiq-service.netlify.app/
+
+https://tuwaiq-service.netlify.app/
 
 
 
